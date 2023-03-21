@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+
+
+.header{
+	display: flex;
+	align-items: center;
+	height: 65px;
+	background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+	color: white;
+	font-family: 'Karla', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header--image{
+	height: 30px;
+	padding-left: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header--title{
+	font-size: 1.25rem;
+	padding-left: 20px;
+	margin-right: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header--desc{
+	font-size: 0.9rem;
+	padding-right: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.form{
+	align-items: center;
+	font-family: 'Karla', sans-serif;
+	padding: 40px 100px;
+	display: grid;
+	grid-template: 40px 40px / 1fr 1fr;
+	gap: 17px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form--button{
+	padding: 10px;
+	font-family: 'Karla', sans-serif;
+	background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+	color: white;
+	font-size: 1.1rem;
+	font-weight: 700;
+	border: none;
+	border-radius: 0.3em;
+	grid-column: 1 / -1;
+	cursor: pointer;
+}
+
+.form--input{
+	font-family: 'Karla', sans-serif;
+	padding: 12px 10px;
+	border-radius: 0.3em;
+	text-align: left;
+	color: black;
+	font-weight: 1000;
+	border-color: grey;
+	border-style: solid;
+	border-width: 0.1em;
 }
